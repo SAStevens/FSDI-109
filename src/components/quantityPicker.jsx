@@ -28,4 +28,4 @@ function QuantityPicker(props) {
   );
 }
 
-export default QuantityPicker;
+export default QuantityPicker; 

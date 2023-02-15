@@ -5,16 +5,35 @@ import "bootstrap/dist/js/bootstrap.min.js"
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Catalog from "./pages/catalog";
+import Admin from "./pages/admin";
+import Home from "./pages/home";
+import About from "./pages/about";
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar></Navbar>
 
-      <Catalog />
+        <Routes>
+          <Route path="/" element={ <Home />}></Route>
+          <Route path="/home" element={ <Home />}></Route>
 
-      <Footer />
-    </div>
+
+
+          <Route path="/catalog" element={ <Catalog />}></Route>
+          <Route path="/admin" element={ <Admin />}></Route>
+          <Route path="/about" element={ <About />}></Route>
+
+          <Route path="/notFound" element={ <NotFound />}></Route> 
+          
+        </Routes>
+
+        <Footer></Footer>
+      </div>
+    </BrowserRouter>
   );
 }
 

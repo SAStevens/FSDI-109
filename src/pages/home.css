@@ -1,0 +1,11 @@
+
+.home {
+    background-color: #afdbf6;
+    text-align: center;
+    min-height: 89vh;
+}
+
+.home h1 {
+    text-align: center;
+    padding-top: 10px;
+}

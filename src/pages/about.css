@@ -1,0 +1,14 @@
+.about {
+    background-color: #afdbf6;
+    text-align: center;
+    min-height: 89vh;
+}
+
+.about button {
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.about h6 {
+    color: tomato;
+}
