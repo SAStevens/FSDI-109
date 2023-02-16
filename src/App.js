@@ -8,6 +8,7 @@ import Catalog from "./pages/catalog";
 import Admin from "./pages/admin";
 import Home from "./pages/home";
 import About from "./pages/about";
+import NotFound from "./pages/notFound";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -27,8 +28,8 @@ function App() {
           <Route path="/admin" element={ <Admin />}></Route>
           <Route path="/about" element={ <About />}></Route>
 
-          <Route path="/notFound" element={ <NotFound />}></Route> 
-          
+          <Route path="*" element={ <NotFound />}></Route> 
+
         </Routes>
 
         <Footer></Footer>
@@ -37,4 +38,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;  

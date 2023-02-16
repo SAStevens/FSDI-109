@@ -1,17 +1,18 @@
 .not-found {
-    background-color:beige;
-    min-height: 97vh;
+    background-color: #afdbf6;
+    min-height: 91vh;
 
 }
 
-/* .not found img {
-min-height:
+.not-found img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .not-found .error-text {
-    position:absolute;
-    width: 200px;
-    right: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-} */
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 3px;
+} 
