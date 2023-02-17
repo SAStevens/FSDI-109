@@ -11,9 +11,6 @@ function NotFound() {
                     CLICK HERE TO RETURN HOME
                 </a>
             </div>
-
-
-
         </div>
 
     );
