@@ -6,7 +6,6 @@ function AdminCouponCodes() {
     const [couponCodes, setCouponCodes] = useState({});
 
 
-
     function textChanged(e) {
         let text = e.target.value;
         let attr = e.target.name; 
@@ -28,12 +27,12 @@ function AdminCouponCodes() {
 
             <div className='my-control'>
                 <label className="form-label">Coupon Code:</  label>
-                <input name="code" onChange=   {textChanged} className="form-control"     type="text" />
+                <input name="code" onChange=   {textChanged} className="form-control" type="text" />
             </div>  
 
             <div className='my-control'>
                 <label className="form-label">Discount:</  label>
-                <input name="discount" onChange={textChanged} className="form-control"     type="number" />
+                <input name="discount" onChange={textChanged} className="form-control" type="text" />
             </div>  
 
             <div className="my-control center">
@@ -43,25 +42,9 @@ function AdminCouponCodes() {
 
         </div>
 
-
-
     )
 
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
 
 
 export default AdminCouponCodes;
