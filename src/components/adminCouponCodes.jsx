@@ -22,7 +22,7 @@ function AdminCouponCodes() {
 
     return (
 
-        <div className='ad-Coupons'>
+        <div className='add-Coupons'>
             <h3>Create New Coupons</h3>
 
             <div className='my-control'>
