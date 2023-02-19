@@ -112,6 +112,54 @@ var catalog = [
     },
 
     {
+        "title": "Oakley Crankshaft - Black/Jade",
+        "category": "Unisex",
+        "price": 75.99,
+        "image": "Oakley_Crankshaft_Unisex_Black-Jade_75.99.JPG",
+        "_id": "pn25"
+    },
+
+    {
+        "title": "Oakley Whiskey Prism",
+        "category": "Unisex",
+        "price": 92.07,
+        "image": "Oakley_Whiskey_Prism_Unisex_92.07.JPG",
+        "_id": "pn26"
+    },
+
+    {
+        "title": "Oakley Batwolf",
+        "category": "Mens",
+        "price": 86.50,
+        "image": "Oakley_Batwolf_Mens_86.50.JPG",
+        "_id": "pn27"
+    },
+
+    {
+        "title": "Oakley Contrail Pilot",
+        "category": "Mens",
+        "price": 159.79,
+        "image": "Oakley_Contrail-Pilot_Mens_159.79.JPG",
+        "_id": "pn28"
+    },
+
+    {
+        "title": "Oakley Flak 2.0",
+        "category": "Mens",
+        "price": 98.99,
+        "image": "Oakley_Flak-2.0_Mens_XL_98.99.JPG",
+        "_id": "pn29"
+    },
+
+    {
+        "title": "Oakley Holbrook",
+        "category": "Mens",
+        "price": 128.68,
+        "image": "Oakley_Holbrook_Mens_128.68.JPG",
+        "_id": "pn30"
+    },
+
+    {
         "title": "Sojos Classic Aviators",
         "category": "Unisex",
         "price": 12.74,

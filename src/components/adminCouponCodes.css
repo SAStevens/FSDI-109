@@ -1,0 +1,29 @@
+.add-coupons {
+    display: block;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
+.add-coupons h3 {
+    color: #33608c;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.add-coupons .my-control {
+    color: #333;
+    text-align: left;
+    margin-top: 12px;
+}
+
+.add-coupons .my-control label {
+    color: #33608c;
+    margin-bottom: 3px;
+}
+
+.add-coupons .my-control.center {
+    text-align: center;
+    margin-top: 25px;
+}

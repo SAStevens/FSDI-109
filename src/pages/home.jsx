@@ -7,7 +7,7 @@ function Home() {
         <h1>Welcome to Wade's Shades</h1>
         <h4>Stylin' Shades Just A Click Away!</h4>
 
-        <Link className='btn btn-primary' to='/catalog'>Chlick here to see our catalog</Link>
+        <Link className='btn btn-primary' to='/catalog'>Click here to see the catalog</Link>
 
     </div>
     );

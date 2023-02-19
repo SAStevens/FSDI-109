@@ -8,10 +8,17 @@
 .admin h1 {
     text-align: center;
     padding-top: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 1px 0px 2px black;
 }
 
 .admin .parent {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
+.admin .coupon {
+    display: flex;
+    justify-content: space-around;
+}

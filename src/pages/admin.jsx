@@ -1,5 +1,5 @@
-import AdminProducts from "../components/adminProducts";
 import "./admin.css";
+import AdminProducts from "../components/adminProducts";
 import CouponCodes from './../components/adminCouponCodes';
 
 function Admin() {
@@ -13,19 +13,13 @@ function Admin() {
 
         </div>
 
-        <div className='saver'>
+        <div className='coupon'>
 
             <CouponCodes></CouponCodes>
 
         </div>
-
-
     </div>
-
     );
-
 }
-
-
 
 export default Admin;

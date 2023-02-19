@@ -1,31 +1,40 @@
-.ad-products {
+.add-products {
     display: block;
     width: 400px;
     border: 1px solid black;
     border-radius: 4px;
-    padding: 10px 15px 30px 15px;
-    background-color: white;
+    padding: 15px;
+    background-color: rgb(231, 231, 231);
 }
 
-.ad-products h3 {
-    color: white;
+.add-products h3 {
+    color: #33608c;
     font-family: 'Segoe UI', sans-serif;
 }
 
-.ad-products .my-control {
+.add-products .my-control {
     color: #333;
     text-align: left;
     margin-top: 12px;
-
 }
 
-.ad-products .my-control label {
-
-
+.add-products .my-control label {
+    color: #33608c;
+    margin-bottom: 3px;
 }
 
-.ad-products .my-control center {
-    margin-top: 15px;
-
+.add-products .my-control.center {
+    text-align: center;
+    margin-top: 25px;
 }
 
+.my-control {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+.my-control .form-label {
+    display: block;
+    color: black;
+    font-weight: bold;
+}

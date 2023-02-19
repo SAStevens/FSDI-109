@@ -5,7 +5,6 @@ import { useState } from 'react';
 function AdminCouponCodes() {
     const [couponCodes, setCouponCodes] = useState({});
 
-
     function textChanged(e) {
         let text = e.target.value;
         let attr = e.target.name; 
@@ -22,7 +21,7 @@ function AdminCouponCodes() {
 
     return (
 
-        <div className='add-Coupons'>
+        <div className='add-coupons'>
             <h3>Create New Coupons</h3>
 
             <div className='my-control'>
@@ -36,15 +35,10 @@ function AdminCouponCodes() {
             </div>  
 
             <div className="my-control center">
-                <button onClick={save} className="btn btn-sm btn-primary">Save Coupon Codes</button>
+                <button onClick={save} className="btn btn-sm btn-outline-primary">Save Coupon Codes</button>
             </div>
-
-
         </div>
-
     )
-
 }
 
-
-export default AdminCouponCodes;
+export default AdminCouponCodes; 

@@ -21,11 +21,10 @@ function AdminProducts() {
         let copy = [...allProducts];
         copy.push(product);
         setAllProducts(copy);
-
     }
 
     return (
-        <div className='ad-Products'>
+        <div className='add-products'>
             <h3>Create New Products</h3>
 
             <div className='my-control'>
@@ -49,17 +48,15 @@ function AdminProducts() {
             </div>
 
             <div className="my-control center">
-                <button onClick={saveProduct} className="btn btn-sm btn-primary">Save Product</button>
+                <button onClick={saveProduct} className="btn btn-sm btn-outline-primary">Save Product</button>
             </div>
 
             <ul>
-                {allProducts.map(prod => <li key={prod.title}>{prod.title}</li>)}
+                {allProducts.map(prod => <li>key={prod.title}</li>)}
 
             </ul>
-
         </div>
-
     );
 }
-
     export default AdminProducts;
+    
