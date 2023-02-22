@@ -7,10 +7,11 @@ import Footer from "./components/footer";
 import Catalog from "./pages/catalog";
 import Admin from "./pages/admin";
 import Home from "./pages/home";
+import Cart from "./pages/cart";
+
 import About from "./pages/about";
 import NotFound from "./pages/notFound";
 import GlobalData from "./store/globalData";
-
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/catalog" element={ <Catalog />}></Route>
             <Route path="/admin" element={ <Admin />}></Route>
             <Route path="/about" element={ <About />}></Route>
+            <Route path="/cart" element={ <Cart />}></Route>
 
             <Route path="*" element={ <NotFound />}></Route> 
           </Routes>

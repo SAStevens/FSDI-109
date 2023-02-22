@@ -1,10 +1,11 @@
 .add-coupons {
     display: block;
-    width: 400px;
+    width: 500px;
     border: 1px solid black;
     border-radius: 4px;
     padding: 15px;
     background-color: rgb(231, 231, 231);
+    opacity: 0.9;
 }
 
 .add-coupons h3 {
