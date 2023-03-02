@@ -32,13 +32,30 @@ function About() {
     return (
     <div className="about">
         <h2>About Me</h2>
-        <h4>I'm Scott Stevens</h4>
+        <h4>I'm Wade Kincade and this is my story. . .
+        <br></br>
+        <h5>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor leo vulputate nunc tempor ornare.     Nullam id est et massa sagittis bibendum. Aenean mollis egestas sapien. Donec pretium aliquet consequat.    Vivamus tincidunt facilisis nulla, ut vulputate justo consectetur eget. Nunc sodales aliquam enim, eu aliquam  nunc pharetra in. Nulla ac ultrices lorem. In tristique sem sem. Suspendisse dignissim condimentum felis a   venenatis. Pellentesque sit amet risus condimentum, faucibus urna ac, pellentesque ligula. Phasellus magna leo,   varius nec nulla nec, imperdiet elementum quam.
+            </p>
+            <p>
+                Aut dolores animi ea libero asperiores eum perferendis omnis est odio quia et consequatur dolorem? Cum aliquam  rerum sed galisum esse id quaerat rerum. Sit dignissimos eligendi et fuga mollitia ut eligendi Quis non ipsum    ducimus. Non dolorem odio sed perferendis quas eum velit reprehenderit sed voluptatem quisquam et aspernatur   impedit.
+            </p>
+            <p>
+                Qui laborum amet ut magnam delectus aut repellat quisquam ut perspiciatis odio rem maxime veritatis aut     laudantium incidunt quo voluptatem autem. Aut consequatur voluptates sit delectus adipisci et tempora cumque    est tempore corrupti in distinctio alias sit unde totam. Est excepturi suscipit et amet dolores sit provident  quod qui alias consectetur 33 internos sint sed quae sunt a aliquid ipsum. Ut expedita temporibus cum expedita   dolor non labore quisquam et error omnis sit exercitationem dolorum qui rerum nihil sed consequatur cumque.
+            </p>
+            <p>
+                Nam quis semper erat, ac interdum ex. Cras vitae odio malesuada, bibendum tellus a, viverra turpis. Phasellus   ultrices a dolor nec consectetur. Fusce nec risus dui. Aenean hendrerit dolor fermentum, aliquet arcu non,    ultricies eros. Phasellus volutpat venenatis pretium. Duis ut urna eu nunc lacinia scelerisque vitae ac velit.     Fusce facilisis libero eu convallis pulvinar. In maximus mi lectus, non commodo orci aliquet at. Sed sit amet   dapibus nulla, at consequat arcu. Ut vel maximus orci. In ac felis fringilla, posuere risus quis, molestie diam.
+            </p>
+        </h5>
+        </h4>
         <h6>{getEmail()}</h6>
         <button  className='btn btn-sm btn-secondary' onClick={toggleEmail}>Click here to see my Email</button>
 
-        <hr />
+        <hr/>
 
-        <p>Type the code "bingo" to see my phone number</p>
+        <div className="phoneNumber">Type the code "bingo" to see my phone number</div>
+
         <input onChange={validateCode} placeholder='code'></input>
 
         <h6 className='mt-3'>{getNumber()}</h6>

@@ -1,9 +1,21 @@
 import "./adminProducts.css";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import DataService from './../services/dataService';
 
 function AdminProducts() {
     const [product, setProduct] = useState({});
     const [allProducts, setAllProducts] = useState([]);
+
+    useEffect(function() {
+        loadProducts();
+    }, []);
+
+    async function loadProducts() {
+        let service = new DataService();
+        let prods = await service.getProducts();
+        setAllProducts(prods);
+
+    }
 
     function textChanged(e) {
         let text = e.target.value;
@@ -17,6 +29,10 @@ function AdminProducts() {
     function saveProduct() {
         console.log(product);
         // TODO: Price should be a number but is a string
+        let savedProd = {...product};
+        savedProd.price = parseFloat(savedProd.price);
+        let service = new DataService();
+        service.saveProduct(savedProd);
 
         let copy = [...allProducts];
         copy.push(product);
@@ -51,10 +67,14 @@ function AdminProducts() {
                 <button onClick={saveProduct} className="btn btn-sm btn-outline-primary">Save Product</button>
             </div>
 
-            <ul>
-                {allProducts.map(prod => <li>key={prod.title}</li>)}
+            <div>
+                <ul>
+                    {allProducts.map(prod => 
+                        <li key={prod.title}>{prod.title} -${prod.price}</li>
+                    )}
+                </ul>
+            </div>
 
-            </ul>
         </div>
     );
 }

@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 var catalog = [
     {
         "title": "Faguma Mens Sports - Mirror",
@@ -116,7 +118,7 @@ var catalog = [
         "category": "Unisex",
         "price": 75.99,
         "image": "Oakley_Crankshaft_Unisex_Black-Jade_75.99.JPG",
-        "_id": "pn25"
+        "_id": "pn15"
     },
 
     {
@@ -124,7 +126,7 @@ var catalog = [
         "category": "Unisex",
         "price": 92.07,
         "image": "Oakley_Whiskey_Prism_Unisex_92.07.JPG",
-        "_id": "pn26"
+        "_id": "pn16"
     },
 
     {
@@ -132,7 +134,7 @@ var catalog = [
         "category": "Mens",
         "price": 86.50,
         "image": "Oakley_Batwolf_Mens_86.50.JPG",
-        "_id": "pn27"
+        "_id": "pn17"
     },
 
     {
@@ -140,7 +142,7 @@ var catalog = [
         "category": "Mens",
         "price": 159.79,
         "image": "Oakley_Contrail-Pilot_Mens_159.79.JPG",
-        "_id": "pn28"
+        "_id": "pn18"
     },
 
     {
@@ -148,7 +150,7 @@ var catalog = [
         "category": "Mens",
         "price": 98.99,
         "image": "Oakley_Flak-2.0_Mens_XL_98.99.JPG",
-        "_id": "pn29"
+        "_id": "pn19"
     },
 
     {
@@ -156,7 +158,7 @@ var catalog = [
         "category": "Mens",
         "price": 128.68,
         "image": "Oakley_Holbrook_Mens_128.68.JPG",
-        "_id": "pn30"
+        "_id": "pn20"
     },
 
     {
@@ -164,7 +166,7 @@ var catalog = [
         "category": "Unisex",
         "price": 12.74,
         "image": "Sojos_Classic_Aviator_12-74.JPG",
-        "_id": "pn15"
+        "_id": "pn21"
     },
 
     {
@@ -172,7 +174,7 @@ var catalog = [
         "category": "Unisex",
         "price": 15.99,
         "image": "Sojos_Large_Classic_Round_Retro_Vintage_15-99.JPG",
-        "_id": "pn16"
+        "_id": "pn22"
     },
 
     {
@@ -180,7 +182,7 @@ var catalog = [
         "category": "Unisex",
         "price": 14.99,
         "image": "Sojos_Oversized_Fashion_Round_Vintage_14-99.JPG",
-        "_id": "pn17"
+        "_id": "pn23"
     },
 
     {
@@ -188,7 +190,7 @@ var catalog = [
         "category": "Womens",
         "price": 16.99,
         "image": "Sojos_Retro_Hexagon_Women_14-99.JPG",
-        "_id": "pn18"
+        "_id": "pn24"
     },
 
     {
@@ -196,7 +198,7 @@ var catalog = [
         "category": "Unisex",
         "price": 14.99,
         "image": "Sojos_Retro_Square_Aviator_14-99.JPG",
-        "_id": "pn19"
+        "_id": "pn25"
     },
 
     {
@@ -204,7 +206,7 @@ var catalog = [
         "category": "Womens",
         "price": 14.99,
         "image": "Sojos_Small_Round_Classic_14-99.JPG",
-        "_id": "pn20"
+        "_id": "pn26"
     },
     
     {
@@ -212,7 +214,7 @@ var catalog = [
         "category": "Unisex",
         "price": 15.99,
         "image": "Sojos_Small_Round_Vintage_14-99.JPG",
-        "_id": "pn21"
+        "_id": "pn27"
     },
 
     {
@@ -220,7 +222,7 @@ var catalog = [
         "category": "Womens",
         "price": 16.99,
         "image": "Sojos_Small_Square_Polygonal_Mirrored_15-99.jpg",
-        "_id": "pn22"
+        "_id": "pn28"
     },
 
     {
@@ -228,7 +230,7 @@ var catalog = [
         "category": "Unisex",
         "price": 25.04,
         "image": "Suncloud_Bayshore_25-04.JPG",
-        "_id": "pn23"
+        "_id": "pn29"
     },
 
     {
@@ -236,16 +238,26 @@ var catalog = [
         "category": "Unisex",
         "price": 24.32,
         "image": "Suncloud_Fortune_24-32.JPG",
-        "_id": "pn24"
+        "_id": "pn30"
     },
 ];
 
 class DataService {
 
-    getProducts() {
-        // TODO: Connect to server and get products to display
-        return catalog;
+
+    async getProducts() {
+        let response = await axios.get("http://127.0.0.1:5000/api/catalog");
+        return response.data;
+
+        // use the line below to test w/o server
+        // return catalog;
     }
+
+    async saveProduct(product) {
+        let response = await axios.post("http://127.0.0.1:5000/api/catalog", product);
+        return response.data;
+    }
+
 }
 
 export default DataService;

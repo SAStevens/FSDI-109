@@ -14,12 +14,11 @@ function Catalog() {
             loadCatalog();
     }, []);
 
-    function loadCatalog() {
+    async function loadCatalog() {
         let service = new DataService(); 
-            let prods = service.getProducts();
-                console.log(prods);
-                    setProducts(prods);
-                    setProdsToDisplay(prods);
+            let prods = await service.getProducts();
+            setProducts(prods);
+            setProdsToDisplay(prods);
         //TODO: move this to a service
         let cats = ["Mens", "Womens", "Unisex"];
             setCategories(cats);

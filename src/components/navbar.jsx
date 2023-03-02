@@ -12,10 +12,10 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/">Wade's Shades</Link>
+    {/* <Link className="navbar-brand" to="/">Wade's Shades</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
-    </button>
+    </button> */}
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -24,11 +24,11 @@ function Navbar() {
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/about">About</Link>
+          <Link className="nav-link" to="/catalog">Catalog</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/catalog">Catalog</Link>
+          <Link className="nav-link" to="/about">About</Link>
         </li>
 
         <li className="nav-item">
@@ -39,7 +39,7 @@ function Navbar() {
 
       <form className="d-flex" role="search">
         <Link to="/cart">
-        <span className="badge text-bg-primary">{cart.length} View Cart</span>
+        <span className="btn btn-primary">You have {cart.length} items. View 🛒</span>
         </Link>
       </form>
     </div>
