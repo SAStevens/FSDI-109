@@ -14,13 +14,10 @@ function Home() {
           <img src="./images/Sun Glasses.webp" alt="" width="600px"></img>
     </div>
 
-
         <br></br>
         <br></br>
 
             <Link className='btn btn-outline-dark' to='/catalog'>Click here to see the catalog</Link>
-
-
 
     </div>
     );
