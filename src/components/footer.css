@@ -4,10 +4,14 @@
 }
 
 .footer label {
+  text-align: center;
+  padding-top: 10px;
   color: rgb(255, 183, 2);
-  font-size: 30px;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bolder;
   font-style: oblique;
-  font-family: fantasy;
+  font-family: 'Kalam', cursive;
   text-transform: uppercase;
-  text-shadow: 0.5px 1px 0px black;
+  letter-spacing: 10px;
+  margin-bottom: 25px;
 }

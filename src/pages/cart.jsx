@@ -11,6 +11,9 @@ function Cart() {
     <div className="cart">
         <h1>Welcome to Wade's Shades</h1>
         <h4>You have {cart.length} products in the cart</h4>
+
+        <br></br>
+        <br></br>
     
         {cart.map((prod)=>(
             <div className="prod-row">

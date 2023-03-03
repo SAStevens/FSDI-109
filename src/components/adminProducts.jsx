@@ -67,13 +67,13 @@ function AdminProducts() {
                 <button onClick={saveProduct} className="btn btn-sm btn-outline-primary">Save Product</button>
             </div>
 
-            <div>
+            {/* <div>
                 <ul>
                     {allProducts.map(prod => 
                         <li key={prod.title}>{prod.title} -${prod.price}</li>
                     )}
                 </ul>
-            </div>
+            </div> */}
 
         </div>
     );

@@ -3,7 +3,7 @@ import './footer.css';
 function Footer() {
     return (
         <div className='footer'>
-            <label>Check out all of our amazing products</label>
+            <label>Be sure to check out all of our amazing products</label>
         </div>
     );
 }

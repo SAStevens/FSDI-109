@@ -35,7 +35,7 @@ function About() {
         <br></br>
         <h5>
             <p>
-                I'm Wade Kincade and this is my story. . .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor leo vulputate nunc tempor ornare.     Nullam id est et massa sagittis bibendum. Aenean mollis egestas sapien. Donec pretium aliquet consequat.    Vivamus tincidunt facilisis nulla, ut vulputate justo consectetur eget. Nunc sodales aliquam enim, eu aliquam  nunc pharetra in. Nulla ac ultrices lorem. In tristique sem sem. 
+                I'm Wade Kincade and this is my story... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor leo vulputate nunc tempor ornare.     Nullam id est et massa sagittis bibendum. Aenean mollis egestas sapien. Donec pretium aliquet consequat.    Vivamus tincidunt facilisis nulla, ut vulputate justo consectetur eget. Nunc sodales aliquam enim, eu aliquam  nunc pharetra in. Nulla ac ultrices lorem. In tristique sem sem. 
             </p>
             <p>
                 Aut dolores animi ea libero asperiores eum perferendis omnis est odio quia et consequatur dolorem? Cum aliquam  rerum sed galisum esse id quaerat rerum. Sit dignissimos eligendi et fuga mollitia ut eligendi Quis non ipsum    ducimus. 

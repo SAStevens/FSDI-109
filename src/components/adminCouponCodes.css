@@ -9,13 +9,11 @@
 }
 
 .add-coupons h3 {
-    color: #33608c;
     text-align: center;
     padding-top: 10px;
     color: rgb(255, 183, 2);
     text-shadow: 1px 1px 2px black;
     font-weight: bolder;
-
     font-style: oblique;
     font-family: 'Kalam', cursive;
     text-transform: uppercase;
@@ -29,7 +27,6 @@
     color: rgb(255, 183, 2);
     text-shadow: 1px 1px 2px black;
     font-weight: bolder;
-
     font-style: oblique;
     font-family: 'Kalam', cursive;
     text-transform: uppercase;
@@ -40,7 +37,16 @@
 }
 
 .add-coupons .my-control label {
-    color: #33608c;
+    text-align: left;
+    padding-top: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
     margin-bottom: 3px;
 }
 
