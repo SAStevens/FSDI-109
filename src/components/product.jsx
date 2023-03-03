@@ -32,7 +32,9 @@ let addProductsToCart = useContext(DataContext).addProductsToCart;
 
     function handleAdd(){
         console.log('Button clicked!', props.data);
-        addProductsToCart(props.data);
+        let copy = {...props.data, quantity: quantity}
+        addProductsToCart(copy);
+
     }
 
 

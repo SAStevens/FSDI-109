@@ -21,9 +21,10 @@ function Cart() {
                 <h5>
                     {prod.title}
                 </h5>
-                <label>$
-                    {prod.price}
-                </label>
+
+                <label>Qty: {prod.quantity}</label>
+                <label>${prod.price * prod.quantity}</label>
+                
                 <button className="btn btn-sm btn-danger">Delete</button>
             </div>
 
