@@ -6,6 +6,30 @@
     min-height: 96vh;
 }
 
+.cart h1 {
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.cart h4 {
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
 .cart img {
     width: 100px;
 }

@@ -7,17 +7,28 @@
 }
 
 .catalog h1 {
+    text-align: center;
+    padding-top: 10px;
     color: rgb(255, 183, 2);
-    font-size: 45px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 50px;
+    font-weight: bolder;
     font-style: oblique;
-    font-family: fantasy;
+    font-family: 'Kalam', cursive;
     text-transform: uppercase;
-    text-shadow: 0.5px 1px 0px black;
     letter-spacing: 10px;
 }
 
 .catalog h5 {
-    color: white;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 .catalog .btn-filter {
