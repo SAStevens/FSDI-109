@@ -9,12 +9,30 @@
 }
 
 .add-products h3 {
-    color: #33608c;
-    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+
+    font-style: oblique;
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
 }
 
 .add-products .my-control {
-    color: #333;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
     text-align: left;
     margin-top: 12px;
 }
